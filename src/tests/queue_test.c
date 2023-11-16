@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "queue.h"
+#include "../queue.h"
 
 int main(void) {
     int i;
@@ -96,6 +96,11 @@ int main(void) {
 
     pq_insert(&proc[0], pq);
     pq_insert(&proc[1], pq);
+
+    tmp = pq_get_element(3, pq);
+    if (tmp->pid == 2) {
+        fprintf(stdout, "ProcessQueue: random access: passed =)\n");
+    }
 
     for (i = 4; i < n_proc; ++i) {
         pq_insert(&proc[i], pq);

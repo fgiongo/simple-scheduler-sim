@@ -188,5 +188,22 @@ Process* pq_remove(ProcessQueue* pq){
     return proc;
 }
 
+Process* pq_get_element(int index, ProcessQueue *pq) {
+    int i;
+
+    if (!pq) {
+        fprintf(stderr, "pq_get_element(): bad argument\n");
+        exit(1);
+    }
+
+    if (index >= pq->n_elem) {
+        fprintf(stderr, "pq_get_element(): element out of bounds\n");
+        exit(1);
+    }
+
+    i = (pq->head + index) % pq->bufsize;
+    return pq->buf[i];
+}
+
 void pq_kill_all_children(int ppid, ProcessQueue* pq){
 }
