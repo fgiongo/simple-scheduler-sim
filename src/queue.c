@@ -177,7 +177,7 @@ Process* pq_remove(ProcessQueue* pq){
     i = pq->head;
     proc = pq->buf[i];
     pq->buf[i] = NULL;
-    i = ++i % pq->bufsize;
+    i = (i + 1) % pq->bufsize;
     pq->head = i;
     pq->n_elem--;
 

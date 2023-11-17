@@ -1,28 +1,25 @@
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
 
-#include "process_queue.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "queue.h"
+#include "graph.h"
+#include "json.h"
 
 static ProcessQueue *high_priority;
 static ProcessQueue *low_priority;
-static ProcessQueue *io;
-static int time;
+static ProcessQueue *io_disk;
+static ProcessQueue *io_tape;
+static ProcessQueue *io_print;
+static int global_time;
 
-void init_queues(void);
-Process* parse_JSON(void);
-void update_priorities(void);
+void init_global_queues(void);
 void add_new_processes(Process*);
-void transfer_ready_processes(void); 
-int all_queues_are_empty(void);
-Process* get_process_from_queues(void);
-int is_finished(Process*);
-void kill_all_children(Process*);
-void kill(Process*);
-int needs_io(Process*);
-void block_process(Process*);
-int quantum_timed_out(Process*);
-void return_to_queue(Process*);
-void run_process(Process*);
-void generate_output(Process*);
+void update_queues(void);
+Process* get_next_process(void);
+Graph* run_process(Process*);
+void requeue_process(Process*);
+void output_graph(Graph*);
 
 #endif

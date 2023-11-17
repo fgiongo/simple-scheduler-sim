@@ -19,15 +19,16 @@ typedef struct _IoOp {
 
 typedef struct _Process {
     int pid;
-    int ppid;
     int status; /* can be either PROCESS_READY, PROCESS_RUNNING,
                    PROCESS_BLOCKED, PROCESS_RUNNING_SUSPENDED,
                    PROCESS_BLOCKED_SUSPENDED */
-    int priority; /* 1 or 2 */
     int start_time;
     int running_time;
+    int cpu_time;
     int time_until_ready;
     IoOp *io_ops;
 } Process;
+
+void process_init(Process*);
 
 #endif
