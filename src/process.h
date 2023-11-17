@@ -17,9 +17,7 @@ typedef struct _IoOp {
 
 typedef struct _Process {
     int pid;
-    int status; /* can be either PROCESS_READY, PROCESS_RUNNING,
-                   PROCESS_BLOCKED, PROCESS_RUNNING_SUSPENDED,
-                   PROCESS_BLOCKED_SUSPENDED */
+    int status; /* can be either PROCESS_READY, PROCESS_RUNNING, PROCESS_BLOCKED */
     int start_time;
     int running_time;
     int cpu_time;
