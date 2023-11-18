@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "scheduler.h"
 
-
 int main(void){
     ProcessQueue *queues[5];
     ProcessQueue *new_processes;

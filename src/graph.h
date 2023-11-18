@@ -1,9 +1,6 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-#include <stdlib.h>
-#include <stdio.h>
-
 typedef struct _Graph {
     int n_elem;
     int bufsize;

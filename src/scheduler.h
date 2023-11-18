@@ -3,9 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "process.h"
 #include "queue.h"
-#include "graph.h"
 #include "json.h"
+#include "graph.h"
 
 #define QUANTUM 4
 #define CPU_HIGH 0
@@ -13,6 +15,7 @@
 #define IO_DISK 2
 #define IO_TAPE 3
 #define IO_PRINT 4
+#define IO_NONE 5
 
 
 void add_new_processes

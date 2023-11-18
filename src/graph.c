@@ -1,4 +1,6 @@
-#include "graph.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include "scheduler.h"
 
 Graph* graph_create(void){
     Graph* graph;
