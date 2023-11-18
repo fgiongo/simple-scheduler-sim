@@ -1,11 +1,42 @@
 #include "graph.h"
 
+Graph* graph_create(void){
+    Graph* graph;
+    int* time;
+    int* pid;
 
-/* TODO: appends values from src to end of dest */
-void graph_append(int src[2], Graph* dest){}
+    graph = (Graph*) malloc(sizeof(Graph));
+    if (!graph) {
+        fprintf(stderr, "graph_create(): bad alloc\n");
+        exit(1);
+    }
 
-/* TODO: initialize graph with size 0 */
-void graph_init(Graph* graph){}
+    time = (int*) malloc(sizeof(int));
+    pid = (int*) malloc(sizeof(int));
+    if (!time || !pid){
+        fprintf(stderr, "graph_create(): bad alloc\n");
+        exit(1);
+    }
 
-/* TODO: handle overflow when appending */
-void graph_overflow(Graph* graph){}
+    graph->n_elem = 0;
+    graph->bufsize = 1;
+    graph->time = time;
+    graph->pid = pid;
+
+    return graph;
+}
+
+
+void graph_append
+(
+        int time,
+        int pid,
+        Graph* dest
+)
+{
+    /* TODO(nando): implement this */
+}
+
+void graph_overflow(Graph* graph){
+    /* TODO(nando): implement this */
+}

@@ -1,14 +1,18 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
+#include <stdlib.h>
+#include <stdio.h>
+
 typedef struct _Graph {
-    int size;
+    int n_elem;
     int bufsize;
-    int* values[2];
+    int* time;
+    int* pid; 
 } Graph;
 
-void graph_init(Graph* graph);
+Graph* graph_create(void);
 void graph_overflow(Graph* graph);
-void graph_append(int src[2], Graph* dest);
+void graph_append(int time, int pid, Graph* dest);
 
 #endif

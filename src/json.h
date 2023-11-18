@@ -1,8 +1,8 @@
 #ifndef JSON_H
 #define JSON_H
 
-#include "process.h"
+#include "queue.h"
 
-Process* parse_JSON(void);
+ProcessQueue* parse_JSON(void);
 
 #endif

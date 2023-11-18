@@ -3,15 +3,17 @@
 #include <string.h>
 #include "queue.h"
 
-void pq_init(ProcessQueue* pq) {
+ProcessQueue* pq_create(void) {
+    ProcessQueue* pq;
+    pq = (ProcessQueue*) malloc(sizeof(ProcessQueue));
     if (!pq) {
-        fprintf(stderr, "pq_init(): bad argument\n");
+        fprintf(stderr, "pq_create(): bad alloc\n");
         exit(1);
     }
 
     pq->buf = (Process**) malloc(sizeof(Process*));
     if (!pq->buf) {
-        fprintf(stderr, "pq_init(): bad alloc\n");
+        fprintf(stderr, "pq_create(): bad alloc\n");
         exit(1);
     }
 
@@ -19,6 +21,7 @@ void pq_init(ProcessQueue* pq) {
     pq->head = 0;
     pq->end = 0;
     pq->n_elem = 0;
+    return pq;
 }
 
 /* Be aware: this function assumes queue is completely full */

@@ -1,2 +1,3 @@
 default:
-	mkdir ./build && gcc -ansi -Wall -pedantic -o ./build/scheduler.exe ./src/*.c
+	mkdir -p ./build
+	gcc -ansi -Wall -pedantic -o ./build/scheduler.exe ./src/*.c

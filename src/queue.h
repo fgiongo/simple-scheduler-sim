@@ -1,5 +1,6 @@
 #ifndef QUEUE_H
 #define QUEUE_H
+
 #include "process.h"
 
 typedef struct _ProcessQueue {
@@ -10,7 +11,7 @@ typedef struct _ProcessQueue {
     int n_elem;
 } ProcessQueue;
 
-void pq_init(ProcessQueue*);
+ProcessQueue* pq_create(void);
 void pq_overflow(ProcessQueue*); /* Be aware: this function assumes queue is completely full */
 void pq_underflow(ProcessQueue*);
 void pq_insert(Process*, ProcessQueue*);
