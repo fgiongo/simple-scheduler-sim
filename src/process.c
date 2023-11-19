@@ -122,7 +122,12 @@ Process* process_generate_mock
 
     creation_time = rand() % (creation_time_limit + 1);
     cpu_time_max = (rand() % cpu_time_limit + 1);
-    io_n_elem = rand() % (cpu_time_max / 2);
+    if (cpu_time_max / 2 != 0) {
+        io_n_elem = rand() % (cpu_time_max / 2);
+    }
+    else {
+        io_n_elem = 0;
+    }
     proc = process_create(pid, creation_time, cpu_time_max);
 
     i = 0;
