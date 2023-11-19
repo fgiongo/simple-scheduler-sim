@@ -3,16 +3,17 @@
 
 /* TODO: parse JSON from stdin and return queue of processes
  *       ordered by start time (earliest first) */
-ProcessQueue* parse_JSON(void){
+ProcessQueue* parse_JSON(DynamicArray *_array){
     ProcessQueue *queue = pq_create;
-    int pid, creation_time, cpu_time_max, i, sizeTimes, sizeTypes;
+    int pid, creation_time, cpu_time_max, i, sizeTimes, sizeTypes, p_counter = 0;
     int *io_times, *io_types;
     char buffer[1024], *rest;
     char ch = '[';
 
     while (fgets(buffer, sizeof(buffer), stdin) != NULL){
         
-        if (strstr(buffer, "pid") != NULL) {    
+        if (strstr(buffer, "pid") != NULL) { 
+            Process *p;   
             sscanf(buffer, "\"pid\": %d,", &pid);
 
             fgets(buffer, sizeof(buffer), stdin); 
@@ -38,20 +39,23 @@ ProcessQueue* parse_JSON(void){
                 exit(1);
             }
 
-            Process *p = process_create(pid, creation_time, cpu_time_max);
-            
+            p = process_create(pid, creation_time, cpu_time_max);
             for(i = 0; i < sizeTimes; i++){
                 add_io_operation(p, io_times[i], io_types[i]);
             }
 
-            pq_insert(p, queue);
+            p_counter++; 
+            insert_dynamic_array(p, _array);
+
         }
         else {
             continue;
         }
     }
 
-    return queue;
+    process_sort_by_creation_time(_array -> Darray, p_counter);
+
+
 }
 
 int get_size_array(char *str){
