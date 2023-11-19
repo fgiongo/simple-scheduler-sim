@@ -12,7 +12,28 @@ void add_new_processes
         int time_elapsed             /* time elapsed since start of simulation */
 )
 {
-    /* TODO(nando): implement this */
+    Process* p;
+    if (!new_processes
+        || !new_processes->buf
+        || !queues
+        || !queues->buf)
+    {
+        fprintf(stderr, "scheduler:add_new_processes(): bad argumen\n");
+        exit(1);
+    }
+
+    while (new_processes->n_elem > 0)
+    {
+        p = pq_get_element(0, new_processes);
+
+        if (p->creation_time <= time_elapsed) {
+            p = pq_remove(new_processes);
+            pq_insert(p, queues[CPU_HIGH]);
+        }
+        else {
+            break;
+        }
+    }
 }
 
 
