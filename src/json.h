@@ -10,11 +10,11 @@ typedef struct _DynamicArray{
 } DynamicArray;
 
 
-ProcessQueue* parse_JSON(DynamicArray *_array);
-int get_size_array(char *str);
-int* str_to_int_array(char *str, int max);
-DynamicArray* initialize_array();
-void increase_Darray_size(DynamicArray* _vector);
-void insert_dynamic_array(Process *_process, DynamicArray* _vector);
+ProcessQueue* parse_JSON(DynamicArray*);
+int get_size_array(char*);
+int* str_to_int_array(char*, int);
+DynamicArray* initialize_array(void);
+void increase_Darray_size(DynamicArray*);
+void insert_dynamic_array(Process*, DynamicArray*);
 
 #endif

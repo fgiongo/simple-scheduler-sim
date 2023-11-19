@@ -54,8 +54,11 @@ ProcessQueue* parse_JSON(DynamicArray *_array){
     }
 
     process_sort_by_creation_time(_array -> Darray, p_counter);
+    for (i = 0; i < p_counter; i++){
+        pq_insert(_array -> Darray[i], queue);
+    }
 
-
+    return queue;
 }
 
 int get_size_array(char *str){
