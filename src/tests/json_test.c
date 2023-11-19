@@ -10,7 +10,7 @@ int main (void){
     queue = parse_JSON(arrayD);
 
     for(i = 0; i < arrayD -> size; i++){
-        toString = process_tostring(arrayD -> Darray[i], 1024);
+        toString = process_tostring(pq_get_element(i, queue), 1024);
         printf("%s", toString);
     }
 

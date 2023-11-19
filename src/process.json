@@ -4,7 +4,7 @@
 "creation_time": 200,
 "cpu_time_max": 50,
 "io_times": [5, 10, 15],
-"io_types": [2, 1, 3]
+"io_types": ["DISK", "TAPE", "PRINT"]
 },
 {
 "pid": 2,
