@@ -122,7 +122,12 @@ Process* process_generate_mock
 
     creation_time = rand() % (creation_time_limit + 1);
     cpu_time_max = (rand() % cpu_time_limit + 1);
-    io_n_elem = rand() % (cpu_time_max / 2);
+    if (cpu_time_max / 2 != 0) {
+        io_n_elem = rand() % (cpu_time_max / 2);
+    }
+    else {
+        io_n_elem = 0;
+    }
     proc = process_create(pid, creation_time, cpu_time_max);
 
     i = 0;
@@ -214,6 +219,9 @@ char* process_tostring(Process* p, int bufsize) {
             strcpy(&out[i], "print\n");
             i += 6;
             break;
+        default:
+            strcpy(&out[i], "undefined\n");
+            i += 10;
     }
 
     if (io_status != IO_NONE) {
@@ -242,10 +250,6 @@ char* process_tostring(Process* p, int bufsize) {
             i += 6;
             io_status = p->io_types[k];
             switch (io_status){
-                case IO_NONE:
-                    strcpy(&out[i], "none\n");
-                    i += 5;
-                    break;
                 case IO_DISK:
                     strcpy(&out[i], "disk\n");
                     i += 5;
@@ -258,6 +262,9 @@ char* process_tostring(Process* p, int bufsize) {
                     strcpy(&out[i], "print\n");
                     i += 6;
                     break;
+                default:
+                    strcpy(&out[i], "undefined\n");
+                    i += 10;
             }
         }
 
