@@ -214,6 +214,9 @@ char* process_tostring(Process* p, int bufsize) {
             strcpy(&out[i], "print\n");
             i += 6;
             break;
+        default:
+            strcpy(&out[i], "undefined\n");
+            i += 10;
     }
 
     if (io_status != IO_NONE) {
@@ -242,10 +245,6 @@ char* process_tostring(Process* p, int bufsize) {
             i += 6;
             io_status = p->io_types[k];
             switch (io_status){
-                case IO_NONE:
-                    strcpy(&out[i], "none\n");
-                    i += 5;
-                    break;
                 case IO_DISK:
                     strcpy(&out[i], "disk\n");
                     i += 5;
@@ -258,6 +257,9 @@ char* process_tostring(Process* p, int bufsize) {
                     strcpy(&out[i], "print\n");
                     i += 6;
                     break;
+                default:
+                    strcpy(&out[i], "undefined\n");
+                    i += 10;
             }
         }
 
