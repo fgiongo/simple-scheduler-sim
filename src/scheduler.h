@@ -4,10 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "process.h"
 #include "queue.h"
 #include "json.h"
 #include "graph.h"
+#include "mock.h"
 
 #define QUANTUM 4
 #define CPU_HIGH 0
@@ -16,6 +18,10 @@
 #define IO_TAPE 3
 #define IO_PRINT 4
 #define IO_NONE 5
+#define IO_TIME_DISK 2
+#define IO_TIME_TAPE 5
+#define IO_TIME_PRINT 10
+
 
 
 void add_new_processes
