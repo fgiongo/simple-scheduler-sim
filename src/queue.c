@@ -207,6 +207,3 @@ Process* pq_get_element(int index, ProcessQueue *pq) {
     i = (pq->head + index) % pq->bufsize;
     return pq->buf[i];
 }
-
-void pq_kill_all_children(int ppid, ProcessQueue* pq){
-}
