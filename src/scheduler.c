@@ -18,7 +18,7 @@ void add_new_processes
         || !queues
         || !queues->buf)
     {
-        fprintf(stderr, "scheduler:add_new_processes(): bad argumen\n");
+        fprintf(stderr, "scheduler:add_new_processes(): bad argument\n");
         exit(1);
     }
 

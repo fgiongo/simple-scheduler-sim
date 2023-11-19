@@ -85,4 +85,33 @@ int* str_to_int_array(char *str, int max){
     }
 
     return arr;
+}       
+
+DynamicArray *initialize_array(){
+    DynamicArray *_arrayD = (DynamicArray *) malloc (sizeof(DynamicArray));
+
+    if(!_arrayD){
+        printf("error: could not allocate memory to the dynamic array\n");
+        exit(1);
+    }
+
+    _arrayD -> capacity = 1;
+    _arrayD -> size = 0;
+    _arrayD -> Darray = (Process **) malloc(sizeof(Process *));
+
+    return _arrayD;
+}
+
+void increase_Darray_size(DynamicArray *_vector){
+    _vector -> capacity = 2 * _vector -> capacity;
+    _vector -> Darray = (Process **) realloc(_vector -> Darray, _vector -> capacity * sizeof(Process *));
+}
+
+void insert_dynamic_array(Process *_process, DynamicArray *_vector){
+    if (_vector -> size == _vector -> capacity){
+        increase_Darray_size(_vector);
+    }
+
+    _vector -> Darray[_vector -> size] = _process;
+    _vector -> size++;
 }
