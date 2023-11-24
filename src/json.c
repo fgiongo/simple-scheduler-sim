@@ -36,7 +36,7 @@ ProcessQueue* parse_JSON(DynamicArray *_array){
             rest = strchr(buffer, ch);
             rest[strlen(rest) - 2] = '\0';
             sizeTypes = get_size_array(rest);
-            io_types = str_to_int_array(rest, sizeTypes);
+            io_types = map_io_to_numbers(rest, sizeTypes);
 
             if (sizeTypes != sizeTimes){
                 printf("error: the number of io_times does not equal the amount of times io activates the OS\n");
@@ -126,4 +126,38 @@ void insert_dynamic_array(Process *_process, DynamicArray *_vector){
 
     _vector -> Darray[_vector -> size] = _process;
     _vector -> size++;
+}
+
+int* map_io_to_numbers(char* io_devices, int count) {
+    int* io_array; 
+    int i;
+    char* token;
+
+    io_array = (int*) malloc(count * sizeof(int));
+
+    if (!io_array){
+        fprintf(stderr, "not able to allocate memory to io_array\n");
+        exit(1);
+    }
+
+    i = 0;
+    token = strtok(io_devices, "[], ");
+
+    while (token != NULL && i < count){
+
+        if (strcmp(token, "\"DISK\"") == 0) {
+            io_array[i] = IO_DISK;
+
+        } else if (strcmp(token, "\"TAPE\"") == 0) {
+            io_array[i] = IO_TAPE;
+            
+        } else if (strcmp(token, "\"PRINT\"") == 0) {
+            io_array[i] = IO_PRINT;
+        }
+
+        token = strtok(NULL, "[], ");
+        i++;
+    }
+
+    return io_array;
 }

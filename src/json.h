@@ -16,5 +16,6 @@ int* str_to_int_array(char*, int);
 DynamicArray* initialize_array(void);
 void increase_Darray_size(DynamicArray*);
 void insert_dynamic_array(Process*, DynamicArray*);
+int* map_io_to_numbers(char*, int);
 
 #endif
