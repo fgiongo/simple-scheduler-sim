@@ -1,6 +1,6 @@
 #include "../modules/scheduler.h"
 
-int main(void){
+int main(void) {
     ProcessQueue *queues[5];
     ProcessQueue *new_processes;
     Process* proc;
@@ -9,6 +9,7 @@ int main(void){
     int i, n_processes;
     int time_elapsed;
     int latest_run_duration;
+    char *output;
 
     run_data = graph_create();
     output_data = graph_create();
@@ -23,14 +24,16 @@ int main(void){
     n_processes = 5;
     new_processes = mock_input(n_processes, 10, 20);
     latest_run_duration = 0;
-    time_elapsed = 0;
+    time_elapsed = 10;
 
     if (new_processes->n_elem > 0) {
         add_new_processes(new_processes, queues, time_elapsed);
     }
 
     for (i = 0; i < n_processes; ++i) {
-        process_tostring(pq_get_element(0, queues[CPU_HIGH]), 1024);
+        proc = pq_get_element(i, queues[CPU_HIGH]);
+        output = process_tostring(proc, 1024);
+        fprintf(stdout, output);
     }
 
     return 0;
