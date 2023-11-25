@@ -3,7 +3,8 @@
 
 /* TODO: parse JSON from stdin and return queue of processes
  *       ordered by start time (earliest first) */
-ProcessQueue* parse_JSON(DynamicArray *_array){
+ProcessQueue* parse_JSON(void){
+    DynamicArray* _array;
     ProcessQueue *queue;
     int pid, creation_time, cpu_time_max, i, sizeTimes, sizeTypes, p_counter;
     int *io_times, *io_types;
@@ -12,7 +13,7 @@ ProcessQueue* parse_JSON(DynamicArray *_array){
     ch = '[';
     p_counter = 0;
     queue = pq_create();
-
+    _array = initialize_array();
 
     while (fgets(buffer, sizeof(buffer), stdin) != NULL){
         
@@ -98,12 +99,12 @@ int* str_to_int_array(char *str, int max){
     return arr;
 }       
 
-DynamicArray *initialize_array(){
+DynamicArray *initialize_array(void){
     DynamicArray *_arrayD;
     _arrayD = (DynamicArray *) malloc (sizeof(DynamicArray));
 
     if(!_arrayD){
-        printf("error: could not allocate memory to the dynamic array\n");
+        fprintf(stderr, "error: could not allocate memory to the dynamic array\n");
         exit(1);
     }
 

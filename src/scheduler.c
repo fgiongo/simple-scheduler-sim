@@ -15,8 +15,7 @@ void add_new_processes
     Process* p;
     if (!new_processes
         || !new_processes->buf
-        || !queues
-        || !queues->buf)
+        || !queues)
     {
         fprintf(stderr, "scheduler:add_new_processes(): bad argument\n");
         exit(1);
