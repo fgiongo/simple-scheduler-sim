@@ -44,7 +44,39 @@ void update_io_wait_time
         int time_since_update  /* time units since last update */
 )
 {
-    /* TODO(nando): implement this */
+    if (!queues) {
+        fprintf(stdout, "update_io_wait_time(): bad argument\n");
+        exit(1);
+    }
+
+    update_io_queue(queues[IO_DISK], time_since_update);
+    update_io_queue(queues[IO_TAPE], time_since_update);
+    update_io_queue(queues[IO_PRINT], time_since_update);
+}
+
+void update_io_queue
+(
+        ProcessQueue* pq,
+        int time_since_update
+)
+{
+    int i, t;
+    Process* proc;
+
+    if (!pq) {
+        fprintf(stdout, "update_io_queue(): bad argument\n");
+        exit(1);
+    }
+
+    for (i = 0; i < pq->n_elem; ++i) {
+        proc = pq_get_element(i, pq);
+        t = proc->time_until_ready;
+        t -= time_since_update;
+        if (t < 0) {
+            t = 0;
+        }
+        proc->time_until_ready = t;
+    }
 }
 
 
