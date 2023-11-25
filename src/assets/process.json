@@ -1,0 +1,72 @@
+[
+{
+"pid": 1,
+"creation_time": 200,
+"cpu_time_max": 50,
+"io_times": [5, 10, 15],
+"io_types": ["DISK", "TAPE", "PRINT"]
+},
+{
+"pid": 2,
+"creation_time": 190,
+"cpu_time_max": 70,
+"io_times": [8, 12],
+"io_types": ["PRINT", "TAPE"]
+},
+{
+"pid": 3,
+"creation_time": 180,
+"cpu_time_max": 30,
+"io_times": [3, 6, 9],
+"io_types": ["PRINT", "DISK", "TAPE"]
+},
+{
+"pid": 4,
+"creation_time": 170,
+"cpu_time_max": 60,
+"io_times": [4, 7],
+"io_types": ["TAPE", "DISK"]
+},
+{
+"pid": 5,
+"creation_time": 160,
+"cpu_time_max": 40,
+"io_times": [6, 11, 14],
+"io_types": ["DISK", "TAPE", "PRINT"]
+},
+{
+"pid": 6,
+"creation_time": 150,
+"cpu_time_max": 55,
+"io_times": [7, 10],
+"io_types": ["TAPE", "PRINT"]
+},
+{
+"pid": 7,
+"creation_time": 140,
+"cpu_time_max": 35,
+"io_times": [9, 12, 15],
+"io_types": ["PRINT", "TAPE", "DISK"]
+},
+{
+"pid": 8,
+"creation_time": 120,
+"cpu_time_max": 45,
+"io_times": [11, 14],
+"io_types": ["TAPE", "PRINT"]
+},
+{
+"pid": 9,
+"creation_time": 130,
+"cpu_time_max": 75,
+"io_times": [10, 13],
+"io_types": ["DISK", "PRINT"]
+},
+{
+"pid": 10,
+"creation_time": 100,
+"cpu_time_max": 50,
+"io_times": [12, 15],
+"io_types": ["PRINT", "DISK"]
+}
+]
