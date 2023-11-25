@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "scheduler.h"
+#include "./modules/scheduler.h"
 
 int main(void){
     ProcessQueue *queues[5];
