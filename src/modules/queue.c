@@ -172,3 +172,21 @@ Process* pq_get_element(int index, ProcessQueue *pq) {
     i = (pq->head + index) % pq->bufsize;
     return pq->buf[i];
 }
+
+
+void pq_print(ProcessQueue *pq) {
+    int i;
+    char* out;
+    Process* proc;
+
+    if (!pq) {
+        fprintf(stderr, "print_queue(): bad argument\n");
+        exit(1);
+    }
+
+    for (i = 0; i < pq->n_elem; ++i) {
+        proc = pq_get_element(i, pq);
+        out = process_tostring(proc, 1024);
+        fputs(out, stdout);
+    }
+}
