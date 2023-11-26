@@ -36,7 +36,25 @@ void graph_append
         Graph* dest
 )
 {
-    /* TODO(nando): implement this */
+    int i;
+
+    if (!dest
+        || !dest->time
+        || !dest->pid
+        || bufsize < 1
+        || dest->n_elem > dest->bufsize)
+    {
+        fprintf(stderr, "graph_append(): bad argument\n");
+        exit(1);
+    }
+
+    if (dest->n_elem == dest->bufsize) {
+        graph_overflow(dest);
+    }
+
+    i = graph->n_elem;
+    graph->time[i] = time;
+    graph->pid[i] = pid;
 }
 
 void graph_overflow(Graph* graph){
@@ -44,28 +62,33 @@ void graph_overflow(Graph* graph){
     int* new_time;
     int* new_pid;
 
-    if (!graph || !graph->time || !graph->pid || bufsize < 1) {
-        fprintf(stdout, "graph_overflow(): bad argument\n");
+    if (!graph
+        || !graph->time
+        || !graph->pid
+        || bufsize < 1
+        || graph->n_elem > graph->bufsize)
+    {
+        fprintf(stderr, "graph_overflow(): bad argument\n");
         exit(1);
     }
 
     new_bufsize = graph->bufsize * 2;
     new_time = (int*) malloc(sizeof(int) * new_bufsize);
     if (!new_time) {
-        fprintf(stdout, "graph_overflow(): bad alloc\n");
+        fprintf(stderr, "graph_overflow(): bad alloc\n");
         exit(1);
     }
 
     new_pid = (int*) malloc(sizeof(int) * new_bufsize);
     if (!new_time) {
         free(new_time);
-        fprintf(stdout, "graph_overflow(): bad alloc\n");
+        fprintf(stderr, "graph_overflow(): bad alloc\n");
         exit(1);
     }
 
     for (i = 0; i < graph->n_elem; ++i) {
         new_time[i] = graph_get_time(i, graph);
-        pid[i] = graph_get_pid(i, graph);
+        new_pid[i] = graph_get_pid(i, graph);
     }
 
     free(graph->time);
@@ -77,12 +100,12 @@ void graph_overflow(Graph* graph){
 
 int graph_get_time(int n, Graph* graph){
     if (!graph || !graph->time){
-        fprintf(stdout, "graph_get_time(): bad argument\n");
+        fprintf(stderr, "graph_get_time(): bad argument\n");
         exit(1);
     }
 
     if (n >= graph->n_elem) {
-        fprintf(stdout, "graph_get_time(): out of bounds access\n");
+        fprintf(stderr, "graph_get_time(): out of bounds access\n");
         exit(1);
     }
 
@@ -92,12 +115,12 @@ int graph_get_time(int n, Graph* graph){
 
 int graph_get_pid(int n, Graph* graph){
     if (!graph || !graph->pid){
-        fprintf(stdout, "graph_get_pid(): bad argument\n");
+        fprintf(stderr, "graph_get_pid(): bad argument\n");
         exit(1);
     }
 
     if (n >= graph->n_elem) {
-        fprintf(stdout, "graph_get_pid(): out of bounds access\n");
+        fprintf(stderr, "graph_get_pid(): out of bounds access\n");
         exit(1);
     }
 
