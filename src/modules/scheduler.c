@@ -83,7 +83,43 @@ void update_io_queue
 /* Transfer all processes that are done with IO to CPU queues
  * according to IO type */
 void transfer_ready_processes(ProcessQueue** queues){
-    /* TODO(nando): implement this */
+    Process* proc;
+
+    while (has_ready_process(queues[IO_DISK])) {
+        proc = pq_remove(queues[IO_DISK]);
+        pq_insert(proc, queues[CPU_LOW]);
+    }
+
+    while (has_ready_process(queues[IO_TAPE])) {
+        proc = pq_remove(queues[IO_TAPE]);
+        pq_insert(proc, queues[CPU_HIGH]);
+    }
+
+    while (has_ready_process(queues[IO_PRINT])) {
+        proc = pq_remove(queues[IO_PRINT]);
+        pq_insert(proc, queues[CPU_HIGH]);
+    }
+}
+
+/* returns 1 if first process in queue has time_until_ready == 1, else returns 0 */
+int has_ready_process(ProcessQueue* pq) {
+    Process* proc;
+
+    if (!pq) {
+        fprintf(stderr, "scheduler: has_ready_process(): bad argument\n");
+        exit(1);
+    }
+
+    if (pq->n_elem == 0) {
+        return 0;
+    }
+
+    proc = pq_get_element(0, pq);
+    if (proc->time_until_ready == 0) {
+        return 1;
+    }
+
+    return 0;
 }
 
 
