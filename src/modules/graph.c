@@ -41,7 +41,7 @@ void graph_append
     if (!dest
         || !dest->time
         || !dest->pid
-        || bufsize < 1
+        || dest->bufsize < 1
         || dest->n_elem > dest->bufsize)
     {
         fprintf(stderr, "graph_append(): bad argument\n");
@@ -52,9 +52,10 @@ void graph_append
         graph_overflow(dest);
     }
 
-    i = graph->n_elem;
-    graph->time[i] = time;
-    graph->pid[i] = pid;
+    i = dest->n_elem;
+    dest->time[i] = time;
+    dest->pid[i] = pid;
+    dest->n_elem++;
 }
 
 void graph_overflow(Graph* graph){
@@ -65,7 +66,7 @@ void graph_overflow(Graph* graph){
     if (!graph
         || !graph->time
         || !graph->pid
-        || bufsize < 1
+        || graph->bufsize < 1
         || graph->n_elem > graph->bufsize)
     {
         fprintf(stderr, "graph_overflow(): bad argument\n");
@@ -95,6 +96,7 @@ void graph_overflow(Graph* graph){
     free(graph->pid);
     graph->time = new_time;
     graph->pid = new_pid;
+    graph->bufsize = new_bufsize;
 }
 
 
