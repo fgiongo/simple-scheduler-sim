@@ -33,7 +33,7 @@ int main(void) {
     }
     else
     {
-        fprintf(stdout, "test passed =)\n");
+        fprintf(stdout, "test failed =(\n");
     }
 
     return 0;

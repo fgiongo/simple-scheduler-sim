@@ -87,21 +87,24 @@ void transfer_ready_processes(ProcessQueue** queues){
 
     while (has_ready_process(queues[IO_DISK])) {
         proc = pq_remove(queues[IO_DISK]);
+        proc->io_status = IO_NONE;
         pq_insert(proc, queues[CPU_LOW]);
     }
 
     while (has_ready_process(queues[IO_TAPE])) {
         proc = pq_remove(queues[IO_TAPE]);
+        proc->io_status = IO_NONE;
         pq_insert(proc, queues[CPU_HIGH]);
     }
 
     while (has_ready_process(queues[IO_PRINT])) {
         proc = pq_remove(queues[IO_PRINT]);
+        proc->io_status = IO_NONE;
         pq_insert(proc, queues[CPU_HIGH]);
     }
 }
 
-/* returns 1 if first process in queue has time_until_ready == 1, else returns 0 */
+/* returns 1 if first process in queue has time_until_ready == 0, else returns 0 */
 int has_ready_process(ProcessQueue* pq) {
     Process* proc;
 
@@ -141,7 +144,7 @@ Process* get_next_process(ProcessQueue** queues){
  * unit increment during the run, pid is current proceess' PID */
 void run_process
 (
-        Process* proc,    /* process to be ran */
+        Process* proc,    /* process to be run */
         Graph* output,    /* adress for output of graph data */ 
         int* time_elapsed /* adress of time elapsed since start of simulation */
 )
