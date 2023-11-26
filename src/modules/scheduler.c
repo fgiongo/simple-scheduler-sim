@@ -167,15 +167,35 @@ void run_process
 
 
 /* Insert process into queues according to its io_status:
- * if IO_NONE or IO_DISK, insert it into CPU_LOW,
- * otherwise insert it into CPU_HIGH */
+ * if IO_NONE, insert it into CPU_LOW,
+ * otherwise insert it into its respective queue (i.e IO_TAPE into queue[TAPE]) */
 void requeue_process
 (
         Process* proc,      /* source */
         ProcessQueue** queues /* destination (IO and CPU queues) */
 )
 {
-    /* TODO(nando): implement this */
+    int id;
+    id = proc -> io_status;
+
+    switch (id){
+        case IO_NONE:
+            pq_insert(proc, queues[CPU_LOW]);
+            break;
+        case IO_TAPE:
+            pq_insert(proc, queues[IO_TAPE]);
+            break;
+        case IO_DISK:
+            pq_insert(proc, queues[IO_DISK]);
+            break;
+        case IO_PRINT:
+            pq_insert(proc, queues[IO_PRINT]);
+            break;
+        default:
+            fprintf(stderr, "scheduler: requeue_process(): bad argument\n");
+            exit(1);
+            break;
+    }
 }
 
 
