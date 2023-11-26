@@ -92,7 +92,20 @@ void transfer_ready_processes(ProcessQueue** queues){
  * returns first process in CPU_LOW.
  * Otherwise, if CPU_HIGH is not empty, returns first process in CPU_HIGH. */
 Process* get_next_process(ProcessQueue** queues){
-    /* TODO(nando): implement this */
+    Process* p;
+    
+    if(queues[CPU_HIGH] -> n_elem != 0){
+        p = pq_get_element(0, queues[CPU_HIGH]);
+        pq_remove(queues[0]);
+        return p;
+    }
+
+    else if(queues[CPU_LOW] -> n_elem != 0){
+        p = pq_get_element(0, queues[CPU_LOW]);
+        pq_remove(queues[1]);
+        return p;
+    }
+    
     return NULL;
 }
 
