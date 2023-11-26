@@ -128,3 +128,16 @@ int graph_get_pid(int n, Graph* graph){
 
     return (graph->pid[n]);
 }
+
+
+void graph_print(Graph* graph) {
+    int i;
+
+    fputs("{\n", stdout);
+    for (i = 0; i < graph->n_elem; ++i) {
+        fprintf(stdout, "(%d, %d)\n",
+                graph_get_time(i, graph),
+                graph_get_pid(i, graph));
+    }
+    fputs("}\n", stdout);
+}
