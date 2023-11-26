@@ -51,7 +51,7 @@ void update_io_queue
 void transfer_ready_processes(ProcessQueue**);
 
 
-/* returns 1 if first process in queue has time_until_ready == 1, else returns 0 */
+/* returns 1 if first process in queue has time_until_ready == 0, else returns 0 */
 int has_ready_process(ProcessQueue*);
 
 /* Selects and returns next process to be run from CPU queues */
