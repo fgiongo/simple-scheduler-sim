@@ -17,5 +17,6 @@ void graph_append
 );
 int graph_get_time(int, Graph*);
 int graph_get_pid(int, Graph*);
+void graph_print(Graph*);
 
 #endif

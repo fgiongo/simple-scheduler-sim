@@ -137,8 +137,9 @@ Process* get_next_process(ProcessQueue** queues){
 
 
 /* Increments cpu_time of process until it reaches the next IO operation,
- * (if exists), otherwise increments cpu time until it equals cpu_time_needed,
- * up to a maximum of QUANTUM time units.
+ * otherwise increments cpu time until it equals cpu_time_needed,
+ * up to a maximum of QUANTUM time units. If execution reaches IO, it sets
+ * io_status to correct value.
  * Increments time_elapsed by the same amount of time units as cpu_time was incremented.
  * Retuns pairs of values (time, pid) where time = time_elapsed at every time
  * unit increment during the run, pid is current proceess' PID */
@@ -149,7 +150,22 @@ void run_process
         int* time_elapsed /* adress of time elapsed since start of simulation */
 )
 {
-    /* TODO(nando): implement this */
+    int i, io_type;
+
+    for (i = 0; i < QUANTUM; ++i) {
+        if (proc->cpu_time == proc->cpu_time_max) {
+            return;
+        }
+
+        if (process_get_io_type_at_time(proc, proc->cpu_time, &io_type)) {
+            proc->io_status = io_type;
+            return;
+        }
+
+        graph_append(*time_elapsed, proc->pid, output);
+        proc->cpu_time++;
+        *time_elapsed += 1;
+    }
 }
 
 
