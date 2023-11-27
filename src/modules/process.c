@@ -121,7 +121,7 @@ int process_get_io_type_at_time
 (
         Process* proc, /* Process to search for io_type */
         int time,      /* time for which to search */
-        int* type      /* output: io_type at time */
+        int* io_index  /* output: io_index at time */
 )
 {
     int i, index;
@@ -142,7 +142,7 @@ int process_get_io_type_at_time
         return 0;
     }
 
-    *type = proc->io_types[index];
+    *io_index = index;
     return 1;
 }
 
