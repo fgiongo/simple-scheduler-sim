@@ -192,7 +192,7 @@ void requeue_process
         ProcessQueue** queues /* destination (IO and CPU queues) */
 )
 {
-    int id, io_index;
+    int id;
     id = proc -> io_status;
 
 

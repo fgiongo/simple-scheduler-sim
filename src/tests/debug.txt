@@ -1,0 +1,6207 @@
+Input processes:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+Process:
+PID: 2
+created at time : 3
+total cpu time needed to complete: 2
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 4
+created at time : 3
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+
+ ******** Main loop iteration: time elapsed: 0 ********
+
+Queues status:
+New processes queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+Process:
+PID: 2
+created at time : 3
+total cpu time needed to complete: 2
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 4
+created at time : 3
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 1 ********
+
+Queues status:
+New processes queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+Process:
+PID: 2
+created at time : 3
+total cpu time needed to complete: 2
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 4
+created at time : 3
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 2 ********
+
+Queues status:
+New processes queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+Process:
+PID: 2
+created at time : 3
+total cpu time needed to complete: 2
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 4
+created at time : 3
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 4 ********
+
+Queues status:
+New processes queue:
+Process:
+PID: 2
+created at time : 3
+total cpu time needed to complete: 2
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 4
+created at time : 3
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 2):
+
+
+ ******** Main loop iteration: time elapsed: 6 ********
+
+Queues status:
+New processes queue:
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU HIGH queue:
+Process:
+PID: 4
+created at time : 3
+total cpu time needed to complete: 4
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: none
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+
+IO PRINT queue:
+
+CPU running process (PID: 4):
+
+
+ ******** Main loop iteration: time elapsed: 10 ********
+
+Queues status:
+New processes queue:
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU HIGH queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: none
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 10 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 0
+current i/o request status: none
+
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 0):
+
+
+ ******** Main loop iteration: time elapsed: 14 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+Process:
+PID: 3
+created at time : 7
+total cpu time needed to complete: 1
+cpu time used so far: 0
+current i/o request status: none
+
+
+CPU LOW queue:
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 4
+current i/o request status: none
+
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 3):
+
+
+ ******** Main loop iteration: time elapsed: 15 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: none
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+CPU LOW queue:
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 4
+current i/o request status: none
+
+
+IO DISK queue:
+
+IO TAPE queue:
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 15 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+Process:
+PID: 0
+created at time : 6
+total cpu time needed to complete: 7
+cpu time used so far: 4
+current i/o request status: none
+
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 0):
+
+
+ ******** Main loop iteration: time elapsed: 18 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 18 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 19 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 19 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 20 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 20 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 21 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 21 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 22 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 22 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 23 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 23 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 24 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 24 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 25 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 25 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 26 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 26 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 27 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 27 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 28 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 28 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 29 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 29 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 30 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 30 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 31 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 31 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 32 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 32 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 33 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 33 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 34 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 34 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 35 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 35 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 36 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 36 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 37 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 37 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 38 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 38 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 39 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 39 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 40 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 40 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 41 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 41 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 42 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 42 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 43 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 43 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 44 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 44 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 45 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 45 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 46 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 46 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 47 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 47 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 48 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 48 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 49 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 49 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 50 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 50 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 51 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 51 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 52 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 52 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 53 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 53 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 54 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 54 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 55 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 55 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 56 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 56 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 57 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 57 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 58 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 58 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 59 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 59 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 60 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 60 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 61 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 61 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 62 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 62 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 63 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 63 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 64 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 64 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 65 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 65 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 66 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 66 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 67 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 67 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 68 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 68 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 69 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 69 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 70 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 70 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 71 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 71 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 72 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 72 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 73 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 73 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 74 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 74 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 75 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 75 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 76 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 76 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 77 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 77 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 78 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 78 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 79 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 79 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 80 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 80 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 81 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 81 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 82 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 82 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 83 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 83 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 84 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 84 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 85 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 85 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 86 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 86 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 87 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 87 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 88 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 88 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 89 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 89 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 90 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 90 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 91 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 91 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 92 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 92 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 93 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 93 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 94 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 94 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 95 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 95 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 96 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 96 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 97 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 97 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 98 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 98 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 99 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 99 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 100 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 100 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 101 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 101 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 102 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 102 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 103 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 103 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 104 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 104 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 105 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 105 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 106 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 106 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 107 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 107 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 108 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
+
+
+ ******** Main loop iteration: time elapsed: 108 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU idling!:
+
+
+ ******** Main loop iteration: time elapsed: 109 ********
+
+Queues status:
+New processes queue:
+
+CPU HIGH queue:
+
+CPU LOW queue:
+
+IO DISK queue:
+
+IO TAPE queue:
+Process:
+PID: 1
+created at time : 2
+total cpu time needed to complete: 4
+cpu time used so far: 2
+current i/o request status: tape
+time until i/o is finished: 0
+upcoming i/o requests: 
+request:
+time: 2
+type: tape
+total upcoming i/o requests: 1
+
+
+IO PRINT queue:
+
+CPU running process (PID: 1):
