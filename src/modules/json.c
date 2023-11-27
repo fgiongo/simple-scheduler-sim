@@ -31,13 +31,23 @@ ProcessQueue* parse_JSON(void){
             rest = strchr(buffer, ch);
             rest[strlen(rest) - 3] = '\0';
             sizeTimes = get_size_array(rest);
-            io_times = str_to_int_array(rest, sizeTimes);
 
+            if(sizeTimes != 0){
+                io_times = str_to_int_array(rest, sizeTimes);
+            } else {
+                io_times = NULL;
+            }
+            
             fgets(buffer, sizeof(buffer), stdin); 
             rest = strchr(buffer, ch);
             rest[strlen(rest) - 2] = '\0';
             sizeTypes = get_size_array(rest);
-            io_types = map_io_to_numbers(rest, sizeTypes);
+
+            if (sizeTypes != 0){
+                io_types = map_io_to_numbers(rest, sizeTypes);
+            } else {
+                io_types = NULL;
+            }
 
             if (sizeTypes != sizeTimes){
                 printf("error: the number of io_times does not equal the amount of times io activates the OS\n");
@@ -51,7 +61,6 @@ ProcessQueue* parse_JSON(void){
 
             p_counter++; 
             insert_dynamic_array(p, _array);
-
         }
         else {
             continue;
