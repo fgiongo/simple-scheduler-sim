@@ -27,6 +27,16 @@ void bodyBuilder(StringBuffer* stringHTML_body, int numTR, int numTD, Graph outp
         saferCopy(&temporaryString, "       <tr>\n");
         saferConcat(stringHTML_body, &temporaryString);
 
+        saferCopy(&temporaryString, "           <td>");
+        saferConcat(stringHTML_body, &temporaryString);
+
+        sprintf(temporaryString.string, " Processo: %d ", arrayPID.array[i]);
+        saferConcat(stringHTML_body, &temporaryString);
+
+        saferCopy(&temporaryString, "           </td>\n");
+        saferConcat(stringHTML_body, &temporaryString);
+        
+
         j = 0;
         while(j <= numTD){
 
@@ -52,6 +62,23 @@ void bodyBuilder(StringBuffer* stringHTML_body, int numTR, int numTD, Graph outp
         saferCopy(&temporaryString, "       </tr>\n");
         saferConcat(stringHTML_body, &temporaryString);
         i++;
+    }
+
+    saferCopy(&temporaryString, "       <tr>\n");
+    saferConcat(stringHTML_body, &temporaryString);
+
+    saferCopy(&temporaryString, "           <td></td>\n");
+    saferConcat(stringHTML_body, &temporaryString);
+
+    for(j = 0; j <= numTD; j++){
+        saferCopy(&temporaryString, "           <td>");
+        saferConcat(stringHTML_body, &temporaryString); 
+
+        sprintf(temporaryString.string, " %d ", j);
+        saferConcat(stringHTML_body, &temporaryString);
+
+        saferCopy(&temporaryString, "           </td>\n");
+        saferConcat(stringHTML_body, &temporaryString); 
     }
 
     saferCopy(&temporaryString, 
