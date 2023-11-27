@@ -53,6 +53,9 @@ int main(void){
         if (running_process->cpu_time < running_process->cpu_time_max) {
             requeue_process(running_process, queues);
         }
+        else {
+            process_free(proc);
+        }
     }
 
     output_graph(output_data);

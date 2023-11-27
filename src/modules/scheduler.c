@@ -171,7 +171,6 @@ void run_process
 
     for (i = 0; i < QUANTUM; ++i) {
         if (proc->cpu_time == proc->cpu_time_max) {
-            process_free(proc);
             return;
         }
 
