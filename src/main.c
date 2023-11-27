@@ -54,7 +54,7 @@ int main(void){
             requeue_process(running_process, queues);
         }
         else {
-            process_free(proc);
+            process_free(running_process);
         }
     }
 
