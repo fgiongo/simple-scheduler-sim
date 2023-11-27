@@ -67,4 +67,6 @@ char* process_tostring(
 
 void process_free(Process*);
 
+char* process_toJSON(Process*);
+
 #endif

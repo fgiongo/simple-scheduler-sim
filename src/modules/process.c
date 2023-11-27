@@ -330,3 +330,65 @@ void process_free(Process* p) {
 
     free(p);
 }
+
+char* process_toJSON(Process* p) {
+    char *out, *tmp;
+    int size, i;
+
+    out = (char*) malloc(sizeof(char) * 1024);
+    if (!out) {
+        fprintf(stderr, "process_toJSON(): bad alloc\n");
+        exit(1);
+    }
+
+    size = 0;
+    size += sprintf(out + size, "{\n  \"pid\": ");
+    size += sprintf(out + size, "%d,\n", p->pid);
+    size += sprintf(out + size, "  \"creation_time\": ");
+    size += sprintf(out + size, "%d,\n", p->creation_time);
+    size += sprintf(out + size, "  \"cpu_time_max\": ");
+    size += sprintf(out + size, "%d,\n", p->cpu_time_max);
+    size += sprintf(out + size, "  \"io_times\": [");
+    for (i = 0; i < p->io_n_elem; i++) {
+        size += sprintf(out + size, "%d, ", p->io_times[i]);
+    }
+    if (p->io_n_elem > 0){
+        size -= 2;
+    }
+    size += sprintf(out + size, "],\n");
+    size += sprintf(out + size, "  \"io_types\": [");
+    for (i = 0; i < p->io_n_elem; i++) {
+        switch (p->io_types[i]){
+            case IO_DISK: 
+                size += sprintf(out + size, "\"DISK\", ");
+                break;
+            case IO_TAPE:
+                size += sprintf(out + size, "\"TAPE\", ");
+                break;
+            case IO_PRINT:
+                size += sprintf(out + size, "\"PRINT\", ");
+                break;
+            default:
+                size += sprintf(out + size, "\"UNDEFINED\", ");
+                break;
+        }
+    }
+    if (p->io_n_elem > 0){
+        size -= 2;
+    }
+    size += sprintf(out + size, "]\n}");
+    out[size] = '\0';
+    size++;
+
+    tmp = (char*) realloc(out, sizeof(char) * size);
+    if (!tmp) {
+        fprintf(stderr, "process_toJSON(): bad alloc\n");
+        exit(1);
+    }
+    if (out != tmp) {
+        free(out);
+    }
+    out = tmp;
+
+    return out;
+}
