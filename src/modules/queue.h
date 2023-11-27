@@ -15,5 +15,6 @@ void pq_underflow(ProcessQueue*);
 void pq_insert(Process*, ProcessQueue*);
 Process* pq_remove(ProcessQueue*);
 Process* pq_get_element(int index, ProcessQueue*);
+void pq_print(ProcessQueue *pq);
 
 #endif

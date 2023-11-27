@@ -6,13 +6,10 @@ int main(void){
     ProcessQueue *queues[5];
     ProcessQueue *new_processes;
     Process* running_process;
-    Graph *run_data;
     Graph *output_data;
-    int i;
     int time_elapsed;
     int latest_run_duration;
 
-    run_data = graph_create();
     output_data = graph_create();
 
     queues[CPU_HIGH] = pq_create();
@@ -53,14 +50,8 @@ int main(void){
         }
 
         latest_run_duration = time_elapsed;
-        run_process(running_process, run_data, &time_elapsed);
+        run_process(running_process, output_data, &time_elapsed);
         latest_run_duration = time_elapsed - latest_run_duration;
-
-        for (i = 0; i < run_data->n_elem; ++i) {
-            graph_append(run_data->time[i],
-                         run_data->pid[i],
-                         output_data);
-        }
 
         if (running_process->cpu_time < running_process->cpu_time_max) {
             requeue_process(running_process, queues);

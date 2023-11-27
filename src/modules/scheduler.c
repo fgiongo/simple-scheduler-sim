@@ -44,14 +44,85 @@ void update_io_wait_time
         int time_since_update  /* time units since last update */
 )
 {
-    /* TODO(nando): implement this */
+    if (!queues) {
+        fprintf(stdout, "update_io_wait_time(): bad argument\n");
+        exit(1);
+    }
+
+    update_io_queue(queues[IO_DISK], time_since_update);
+    update_io_queue(queues[IO_TAPE], time_since_update);
+    update_io_queue(queues[IO_PRINT], time_since_update);
+}
+
+void update_io_queue
+(
+        ProcessQueue* pq,
+        int time_since_update
+)
+{
+    int i, t;
+    Process* proc;
+
+    if (!pq) {
+        fprintf(stdout, "update_io_queue(): bad argument\n");
+        exit(1);
+    }
+
+    for (i = 0; i < pq->n_elem; ++i) {
+        proc = pq_get_element(i, pq);
+        t = proc->time_until_ready;
+        t -= time_since_update;
+        if (t < 0) {
+            t = 0;
+        }
+        proc->time_until_ready = t;
+    }
 }
 
 
 /* Transfer all processes that are done with IO to CPU queues
  * according to IO type */
 void transfer_ready_processes(ProcessQueue** queues){
-    /* TODO(nando): implement this */
+    Process* proc;
+
+    while (has_ready_process(queues[IO_DISK])) {
+        proc = pq_remove(queues[IO_DISK]);
+        proc->io_status = IO_NONE;
+        pq_insert(proc, queues[CPU_LOW]);
+    }
+
+    while (has_ready_process(queues[IO_TAPE])) {
+        proc = pq_remove(queues[IO_TAPE]);
+        proc->io_status = IO_NONE;
+        pq_insert(proc, queues[CPU_HIGH]);
+    }
+
+    while (has_ready_process(queues[IO_PRINT])) {
+        proc = pq_remove(queues[IO_PRINT]);
+        proc->io_status = IO_NONE;
+        pq_insert(proc, queues[CPU_HIGH]);
+    }
+}
+
+/* returns 1 if first process in queue has time_until_ready == 0, else returns 0 */
+int has_ready_process(ProcessQueue* pq) {
+    Process* proc;
+
+    if (!pq) {
+        fprintf(stderr, "scheduler: has_ready_process(): bad argument\n");
+        exit(1);
+    }
+
+    if (pq->n_elem == 0) {
+        return 0;
+    }
+
+    proc = pq_get_element(0, pq);
+    if (proc->time_until_ready == 0) {
+        return 1;
+    }
+
+    return 0;
 }
 
 
@@ -60,38 +131,87 @@ void transfer_ready_processes(ProcessQueue** queues){
  * returns first process in CPU_LOW.
  * Otherwise, if CPU_HIGH is not empty, returns first process in CPU_HIGH. */
 Process* get_next_process(ProcessQueue** queues){
-    /* TODO(nando): implement this */
+    Process* p;
+    
+    if(queues[CPU_HIGH] -> n_elem != 0){
+        p = pq_get_element(0, queues[CPU_HIGH]);
+        pq_remove(queues[0]);
+        return p;
+    }
+
+    else if(queues[CPU_LOW] -> n_elem != 0){
+        p = pq_get_element(0, queues[CPU_LOW]);
+        pq_remove(queues[1]);
+        return p;
+    }
+    
     return NULL;
 }
 
 
 /* Increments cpu_time of process until it reaches the next IO operation,
- * (if exists), otherwise increments cpu time until it equals cpu_time_needed,
- * up to a maximum of QUANTUM time units.
+ * otherwise increments cpu time until it equals cpu_time_needed,
+ * up to a maximum of QUANTUM time units. If execution reaches IO, it sets
+ * io_status to correct value.
  * Increments time_elapsed by the same amount of time units as cpu_time was incremented.
  * Retuns pairs of values (time, pid) where time = time_elapsed at every time
  * unit increment during the run, pid is current proceess' PID */
 void run_process
 (
-        Process* proc,    /* process to be ran */
+        Process* proc,    /* process to be run */
         Graph* output,    /* adress for output of graph data */ 
         int* time_elapsed /* adress of time elapsed since start of simulation */
 )
 {
-    /* TODO(nando): implement this */
+    int i, io_type;
+
+    for (i = 0; i < QUANTUM; ++i) {
+        if (proc->cpu_time == proc->cpu_time_max) {
+            return;
+        }
+
+        if (process_get_io_type_at_time(proc, proc->cpu_time, &io_type)) {
+            proc->io_status = io_type;
+            return;
+        }
+
+        graph_append(*time_elapsed, proc->pid, output);
+        proc->cpu_time++;
+        *time_elapsed += 1;
+    }
 }
 
 
 /* Insert process into queues according to its io_status:
- * if IO_NONE or IO_DISK, insert it into CPU_LOW,
- * otherwise insert it into CPU_HIGH */
+ * if IO_NONE, insert it into CPU_LOW,
+ * otherwise insert it into its respective queue (i.e IO_TAPE into queue[TAPE]) */
 void requeue_process
 (
         Process* proc,      /* source */
         ProcessQueue** queues /* destination (IO and CPU queues) */
 )
 {
-    /* TODO(nando): implement this */
+    int id;
+    id = proc -> io_status;
+
+    switch (id){
+        case IO_NONE:
+            pq_insert(proc, queues[CPU_LOW]);
+            break;
+        case IO_TAPE:
+            pq_insert(proc, queues[IO_TAPE]);
+            break;
+        case IO_DISK:
+            pq_insert(proc, queues[IO_DISK]);
+            break;
+        case IO_PRINT:
+            pq_insert(proc, queues[IO_PRINT]);
+            break;
+        default:
+            fprintf(stderr, "scheduler: requeue_process(): bad argument\n");
+            exit(1);
+            break;
+    }
 }
 
 

@@ -42,10 +42,20 @@ void update_io_wait_time
 );
 
 
+void update_io_queue
+(
+        ProcessQueue* pq,         /* pointer to IO queue */
+        int time_since_update     /* time units since last update */
+);
+
+
 /* Transfer all processes that are done with IO to CPU queues
  * according to IO type */
 void transfer_ready_processes(ProcessQueue**);
 
+
+/* returns 1 if first process in queue has time_until_ready == 0, else returns 0 */
+int has_ready_process(ProcessQueue*);
 
 /* Selects and returns next process to be run from CPU queues */
 Process* get_next_process(ProcessQueue**);

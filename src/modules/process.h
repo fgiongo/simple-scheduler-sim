@@ -46,6 +46,14 @@ int process_has_io_at_time
         int t          /* time for which to search */
 );
 
+
+int process_get_io_type_at_time
+(
+        Process* proc, /* Process to search for io_type */
+        int time,      /* time for which to search */
+        int* type      /* output: io_type at time */
+);
+
 Process* process_generate_mock
 (
         int pid,

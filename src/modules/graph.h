@@ -9,7 +9,14 @@ typedef struct _Graph {
 } Graph;
 
 Graph* graph_create(void);
-void graph_overflow(Graph* graph);
-void graph_append(int time, int pid, Graph* dest);
+void graph_overflow(Graph*);
+void graph_append
+(       int,      /* time */
+        int,      /* pid  */
+        Graph*    /* dest */
+);
+int graph_get_time(int, Graph*);
+int graph_get_pid(int, Graph*);
+void graph_print(Graph*);
 
 #endif

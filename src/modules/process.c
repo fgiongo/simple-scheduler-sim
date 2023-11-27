@@ -101,6 +101,11 @@ void process_sort_by_creation_time(Process** arr, int n_elem) {
 int process_has_io_at_time(Process* proc, int t) {
     int result, i;
 
+    if (!proc) {
+        fprintf(stderr, "process_has_io_at_time(): bad argument\n");
+        exit(1);
+    }
+
     result = 0;
     for (i = 0; i < proc->io_n_elem; ++i) {
         if (proc->io_times[i] == t) {
@@ -109,6 +114,36 @@ int process_has_io_at_time(Process* proc, int t) {
     }
     
     return result;
+}
+
+
+int process_get_io_type_at_time
+(
+        Process* proc, /* Process to search for io_type */
+        int time,      /* time for which to search */
+        int* type      /* output: io_type at time */
+)
+{
+    int i, index;
+
+    if (!proc) {
+        fprintf(stderr, "process_get_io_type_at_time(): bad argument\n");
+        exit(1);
+    }
+
+    index = -1;
+    for (i = 0; i < proc->io_n_elem; ++i) {
+        if (proc->io_times[i] == time) {
+            index = i;
+        }
+    }
+
+    if (index == -1) {
+        return 0;
+    }
+
+    *type = proc->io_types[index];
+    return 1;
 }
 
 
