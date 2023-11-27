@@ -10,6 +10,9 @@
 #include "json.h"
 #include "graph.h"
 #include "mock.h"
+#include "stringBuffer.h"
+#include "dynamicArray.h"
+#include "html.h"
 
 #define QUANTUM 4
 #define CPU_HIGH 0

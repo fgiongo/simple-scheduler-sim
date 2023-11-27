@@ -97,5 +97,24 @@ void requeue_process
 
 /* Outputs graph as "time pid\ntime pid\n ..." to stdout, for now */
 void output_graph(Graph* output){
-    /* TODO(nando): implementn this */
+    int tr, td;
+    DynamicArrayPID arrayPid;
+
+    StringBuffer stringHTML;
+    StringBuffer stringHTML_Head;
+    StringBuffer stringHTML_Body;
+    initStringBuffer(&stringHTML, MIN_STRING_LENGTH);
+    initStringBuffer(&stringHTML_Head, MIN_STRING_LENGTH);
+    initStringBuffer(&stringHTML_Body, MIN_STRING_LENGTH);
+    initDynamicArray(&arrayPid, 10);
+
+    getNumTrTd(&tr, &td, (*output), &arrayPid);
+    headBuilder(&stringHTML_Head);
+    
+    bodyBuilder(&stringHTML_Body, tr, td, (*output), arrayPid);
+
+    saferCopy(&stringHTML, stringHTML_Head.string);
+    saferConcat(&stringHTML, &stringHTML_Body);
+
+    fputs(stringHTML.string, stdout);
 }
