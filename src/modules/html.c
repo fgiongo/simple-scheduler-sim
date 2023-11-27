@@ -21,13 +21,15 @@ void bodyBuilder(StringBuffer* stringHTML_body, int numTR, int numTD, Graph outp
 
     saferCopy(stringHTML_body,
         "<body>\n"
+        "<h2>Simple Process Scheduler Simulator</h2>\n"
+        "<h4>by Fernando Giongo, Matheus Hack and Samuel Sampaio\n"
         "   <table>\n");
     
     while(i < numTR){
         saferCopy(&temporaryString, "       <tr>\n");
         saferConcat(stringHTML_body, &temporaryString);
 
-        saferCopy(&temporaryString, "           <td>");
+        saferCopy(&temporaryString, "           <td class=\"legenda\">");
         saferConcat(stringHTML_body, &temporaryString);
 
         sprintf(temporaryString.string, " Processo: %d ", arrayPID.array[i]);
@@ -50,7 +52,7 @@ void bodyBuilder(StringBuffer* stringHTML_body, int numTR, int numTD, Graph outp
             }
 
             if (found) {
-                saferCopy(&temporaryString, "           <td>#</td>\n");
+                saferCopy(&temporaryString, "           <td class=\"pintar\">#</td>\n");
             } else {
                 saferCopy(&temporaryString, "           <td></td>\n");
             }
@@ -64,14 +66,14 @@ void bodyBuilder(StringBuffer* stringHTML_body, int numTR, int numTD, Graph outp
         i++;
     }
 
-    saferCopy(&temporaryString, "       <tr>\n");
+    saferCopy(&temporaryString, "       <tr class=\"legenda\">\n");
     saferConcat(stringHTML_body, &temporaryString);
 
     saferCopy(&temporaryString, "           <td></td>\n");
     saferConcat(stringHTML_body, &temporaryString);
 
     for(j = 0; j <= numTD; j++){
-        saferCopy(&temporaryString, "           <td>");
+        saferCopy(&temporaryString, "           <td class=\"legenda\">");
         saferConcat(stringHTML_body, &temporaryString); 
 
         sprintf(temporaryString.string, " %d ", j);
@@ -106,25 +108,39 @@ void headBuilder(StringBuffer* stringHTML_Head) {
     saferCopy(&temporaryString, "    <style>\n"
                              "        /* Add some basic styling to the table */\n"
                              "        table {\n"
-                             "            font-family: Arial, sans-serif;\n"
+                             "            font-family: monospace;\n"
+                             "            font-size: 1.3em;\n"
                              "            border-collapse: collapse;\n"
-                             "            width: 50%;\n"
-                             "            margin: 20px;\n"
                              "        }\n"
                              "\n"
-                             "        th, td {\n"
-                             "            border: 1px solid #dddddd;\n"
-                             "            text-align: left;\n"
+                             "        tr, td {\n"
+                             "            border: 1px solid black;\n"
+                             "            text-align: center;\n"
                              "            padding: 8px;\n"
                              "        }\n"
-                             "\n"
-                             "        th {\n"
+                             "\n");
+
+    saferConcat(stringHTML_Head, &temporaryString);
+
+    saferCopy(&temporaryString, 
+                             "        tr {\n"
                              "            background-color: #f2f2f2;\n"
+                             "            width: 100px;\n"
                              "        }\n"
+                             "        .legenda{\n"
+                             "             background-color: #D0D0D0;\n"
+                             "             font-weight: bold;\n"
+                             "        }\n"
+                             "        .pintar{\n"
+                             "             background-color: #187bcd;\n"
+                             "             color: #187bcd;\n"
+                             "        }\n"
+                             "        h2, h4{\n"
+                             "             margin-left: 20px;\n"
+                             "        }" 
                              "    </style>\n"
                              "    <title>String Buffer to HTML</title>\n"
                              "</head>");
-
     saferConcat(stringHTML_Head, &temporaryString);
 
     free(temporaryString.string);
