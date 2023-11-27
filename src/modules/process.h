@@ -1,6 +1,5 @@
 #ifndef PROCESS_H
 #define PROCESS_H
-
 #define PROCESS_READY 0
 #define PROCESS_RUNNING 1
 #define PROCESS_BLOCKED 2
@@ -50,8 +49,8 @@ int process_has_io_at_time
 int process_get_io_type_at_time
 (
         Process* proc, /* Process to search for io_type */
-        int time,      /* time for which to search */
-        int* type      /* output: io_type at time */
+        int t,      /* time for which to search */
+        int* io_index  /* output: index for io_types and io_times at time t */
 );
 
 Process* process_generate_mock
@@ -65,5 +64,7 @@ char* process_tostring(
         Process*, /* process to be made to string */
         int       /* size of string buffer */
 );
+
+void process_free(Process*);
 
 #endif

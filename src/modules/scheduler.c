@@ -13,6 +13,8 @@ void add_new_processes
 )
 {
     Process* p;
+    int sum;
+
     if (!new_processes
         || !new_processes->buf
         || !queues)
@@ -21,13 +23,15 @@ void add_new_processes
         exit(1);
     }
 
-    while (new_processes->n_elem > 0)
+    sum = io_and_cpu_queues_sum(queues);
+    while (new_processes->n_elem > 0 && sum <= MAX_PROCESSES)
     {
         p = pq_get_element(0, new_processes);
 
         if (p->creation_time <= time_elapsed) {
             p = pq_remove(new_processes);
             pq_insert(p, queues[CPU_HIGH]);
+            sum++;
         }
         else {
             break;
@@ -167,6 +171,7 @@ void run_process
 
     for (i = 0; i < QUANTUM; ++i) {
         if (proc->cpu_time == proc->cpu_time_max) {
+            process_free(proc);
             return;
         }
 
@@ -239,4 +244,15 @@ void output_graph(Graph* output){
     saferConcat(&stringHTML, &stringHTML_Body);
 
     fputs(stringHTML.string, stdout);
+}
+
+int io_and_cpu_queues_sum(ProcessQueue *queues[5]) {
+    int sum, i;
+
+    sum = 0;
+    for (i = 0; i < 5; ++i) {
+        sum += queues[i]->n_elem;
+    }
+
+    return sum;
 }

@@ -315,3 +315,18 @@ char* process_tostring(Process* p, int bufsize) {
 
     return out;
 }
+
+
+void process_free(Process* p) {
+    if (!p) {
+        fprintf(stderr, "process_free(): bad argument\n");
+        exit(1);
+    }
+
+    if (p->io_n_elem > 0) {
+        free(p->io_times);
+        free(p->io_types);
+    }
+
+    free(p);
+}

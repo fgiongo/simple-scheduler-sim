@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "./modules/scheduler.h"
 
 int main(void){
@@ -23,7 +21,6 @@ int main(void){
     time_elapsed = 0;
 
     while (1) {
-
         if (new_processes->n_elem > 0) {
             add_new_processes(new_processes, queues, time_elapsed);
         }
