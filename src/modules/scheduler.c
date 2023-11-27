@@ -163,15 +163,16 @@ void run_process
         int* time_elapsed /* adress of time elapsed since start of simulation */
 )
 {
-    int i, io_type;
+    int i, io_index;
 
     for (i = 0; i < QUANTUM; ++i) {
         if (proc->cpu_time == proc->cpu_time_max) {
             return;
         }
 
-        if (process_get_io_type_at_time(proc, proc->cpu_time, &io_type)) {
-            proc->io_status = io_type;
+        if (process_get_io_type_at_time(proc, proc->cpu_time, &io_index)) {
+            proc->io_status = proc->io_types[io_index];
+            proc->io_times[io_index] = -1;
             return;
         }
 
@@ -191,8 +192,9 @@ void requeue_process
         ProcessQueue** queues /* destination (IO and CPU queues) */
 )
 {
-    int id;
+    int id, io_index;
     id = proc -> io_status;
+
 
     switch (id){
         case IO_NONE:
