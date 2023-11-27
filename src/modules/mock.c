@@ -7,8 +7,8 @@ ProcessQueue* mock_input
     Process** proc_arr;
     int i;
 
-    if (n_proc < 1 || n_proc > 10) {
-        fprintf(stderr, "mock_input(): bad argument: fist argument must be inside interval [1, 10]\n");
+    if (n_proc < 1) {
+        fprintf(stderr, "mock_input(): bad argument\n");
         exit(1);
     }
 

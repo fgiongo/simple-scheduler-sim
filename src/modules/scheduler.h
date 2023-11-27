@@ -15,6 +15,7 @@
 #include "html.h"
 
 #define QUANTUM 4
+#define MAX_PROCESSES 10
 #define CPU_HIGH 0
 #define CPU_LOW 1
 #define IO_DISK 2
@@ -84,5 +85,7 @@ void requeue_process
 /* Outputs graph as "time pid\ntime pid\n ..." to stdout, for now */
 void output_graph(Graph*);
 
+
+int io_and_cpu_queues_sum(ProcessQueue *queues[5]);
 
 #endif
