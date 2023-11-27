@@ -342,13 +342,13 @@ char* process_toJSON(Process* p) {
     }
 
     size = 0;
-    size += sprintf(out + size, "{\n  \"pid\": ");
+    size += sprintf(out + size, "{\n\"pid\": ");
     size += sprintf(out + size, "%d,\n", p->pid);
-    size += sprintf(out + size, "  \"creation_time\": ");
+    size += sprintf(out + size, "\"creation_time\": ");
     size += sprintf(out + size, "%d,\n", p->creation_time);
-    size += sprintf(out + size, "  \"cpu_time_max\": ");
+    size += sprintf(out + size, "\"cpu_time_max\": ");
     size += sprintf(out + size, "%d,\n", p->cpu_time_max);
-    size += sprintf(out + size, "  \"io_times\": [");
+    size += sprintf(out + size, "\"io_times\": [");
     for (i = 0; i < p->io_n_elem; i++) {
         size += sprintf(out + size, "%d, ", p->io_times[i]);
     }
@@ -356,7 +356,7 @@ char* process_toJSON(Process* p) {
         size -= 2;
     }
     size += sprintf(out + size, "],\n");
-    size += sprintf(out + size, "  \"io_types\": [");
+    size += sprintf(out + size, "\"io_types\": [");
     for (i = 0; i < p->io_n_elem; i++) {
         switch (p->io_types[i]){
             case IO_DISK: 
