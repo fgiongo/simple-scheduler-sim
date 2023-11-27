@@ -83,7 +83,6 @@ int get_size_array(char *str){
             count++;
     } while (*(str++));
 
-    count = count + 1;
     return count; 
 }
 
