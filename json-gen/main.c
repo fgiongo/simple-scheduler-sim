@@ -26,6 +26,7 @@ int main(int argc, char** argv) {
         exit(1);
     }
 
+    srand((unsigned) time(NULL));
     pq = mock_input(n_proc, creation_time_limit, cpu_time_limit);
     fputs("[\n", stdout);
     for (i = 0; i < pq->n_elem - 1; ++i) {
