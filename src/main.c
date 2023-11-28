@@ -50,7 +50,7 @@ int main(void){
         run_process(running_process, output_data, &time_elapsed);
         latest_run_duration = time_elapsed - latest_run_duration;
 
-        set_io_timeout(running_process);
+        set_io_timeout(running_process, latest_run_duration);
 
         if (running_process->cpu_time < running_process->cpu_time_max) {
             requeue_process(running_process, queues);

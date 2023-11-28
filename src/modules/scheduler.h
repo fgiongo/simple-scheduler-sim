@@ -72,7 +72,11 @@ void run_process
 );
 
 
-void set_io_timeout(Process* p);
+void set_io_timeout
+(
+        Process*,
+        int          /* amount of time units in latest run */
+);
 
 
 /* Insert process into queues according to its io_status:

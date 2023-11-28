@@ -187,7 +187,7 @@ void run_process
 }
 
 
-void set_io_timeout(Process* p) {
+void set_io_timeout(Process* p, int latest_runtime) {
     if (!p) {
         fprintf(stderr, "scheduler: set_io_timeout(): bad argument\n");
         exit(1);
@@ -214,6 +214,9 @@ void set_io_timeout(Process* p) {
             fprintf(stderr, "scheduler: set_io_timeout(): invalid value for process.io_status\n");
             exit(1);
     }
+
+    /* this terribleness has to be done because of bad design choices */
+    p->time_until_ready += latest_runtime;
 }
 
 
