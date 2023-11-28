@@ -139,13 +139,13 @@ Process* get_next_process(ProcessQueue** queues){
     
     if(queues[CPU_HIGH] -> n_elem != 0){
         p = pq_get_element(0, queues[CPU_HIGH]);
-        pq_remove(queues[0]);
+        pq_remove(queues[CPU_HIGH]);
         return p;
     }
 
     else if(queues[CPU_LOW] -> n_elem != 0){
         p = pq_get_element(0, queues[CPU_LOW]);
-        pq_remove(queues[1]);
+        pq_remove(queues[CPU_LOW]);
         return p;
     }
     
@@ -183,6 +183,36 @@ void run_process
         graph_append(*time_elapsed, proc->pid, output);
         proc->cpu_time++;
         *time_elapsed += 1;
+    }
+}
+
+
+void set_io_timeout(Process* p) {
+    if (!p) {
+        fprintf(stderr, "scheduler: set_io_timeout(): bad argument\n");
+        exit(1);
+    }
+
+    switch (p->io_status) {
+        case IO_NONE:
+            p->time_until_ready = 0;
+            break;
+
+        case IO_DISK:
+            p->time_until_ready = IO_TIME_DISK;
+            break;
+
+        case IO_TAPE:
+            p->time_until_ready = IO_TIME_TAPE;
+            break;
+
+        case IO_PRINT:
+            p->time_until_ready = IO_TIME_PRINT;
+            break;
+
+        default:
+            fprintf(stderr, "scheduler: set_io_timeout(): invalid value for process.io_status\n");
+            exit(1);
     }
 }
 

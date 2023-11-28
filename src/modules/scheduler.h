@@ -72,6 +72,9 @@ void run_process
 );
 
 
+void set_io_timeout(Process* p);
+
+
 /* Insert process into queues according to its io_status:
  * if IO_NONE or IO_DISK, insert it into CPU_LOW,
  * otherwise insert it into CPU_HIGH */
