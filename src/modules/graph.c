@@ -81,7 +81,7 @@ void graph_overflow(Graph* graph){
     }
 
     new_pid = (int*) malloc(sizeof(int) * new_bufsize);
-    if (!new_time) {
+    if (!new_pid) {
         free(new_time);
         fprintf(stderr, "graph_overflow(): bad alloc\n");
         exit(1);

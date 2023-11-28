@@ -66,6 +66,10 @@ void add_io_operation
         proc->io_n_elem++;
         new_io_times[proc->io_n_elem - 1] = io_time;
         new_io_types[proc->io_n_elem - 1] = io_type;
+        if (!proc->io_times || !proc->io_types) {
+            fprintf(stderr, "process: add_io_operation(): bad argument: null pointer at io_times/io_types\n");
+            exit(1);
+        }
         free(proc->io_times);
         free(proc->io_types);
         proc->io_times = new_io_times;
@@ -324,6 +328,10 @@ void process_free(Process* p) {
     }
 
     if (p->io_n_elem > 0) {
+        if (!p->io_times || !p->io_types) {
+            fprintf(stderr, "process_free(): bad argument: null pointer at io_times/io_types\n");
+            exit(1);
+        }
         free(p->io_times);
         free(p->io_types);
     }
