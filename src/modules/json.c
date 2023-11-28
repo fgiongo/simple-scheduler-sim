@@ -1,8 +1,6 @@
 #include <stddef.h>
 #include "scheduler.h"
 
-/* TODO: parse JSON from stdin and return queue of processes
- *       ordered by start time (earliest first) */
 ProcessQueue* parse_JSON(void){
     DynamicArray* _array;
     ProcessQueue *queue;
@@ -29,8 +27,8 @@ ProcessQueue* parse_JSON(void){
 
             fgets(buffer, sizeof(buffer), stdin); 
             rest = strchr(buffer, ch);
-            rest[strlen(rest) - 3] = '\0';
-            sizeTimes = get_size_array(rest);
+            check_whitespace(rest);
+            sizeTimes = get_size_array_int(rest);
 
             if(sizeTimes != 0){
                 io_times = str_to_int_array(rest, sizeTimes);
@@ -40,8 +38,8 @@ ProcessQueue* parse_JSON(void){
             
             fgets(buffer, sizeof(buffer), stdin); 
             rest = strchr(buffer, ch);
-            rest[strlen(rest) - 2] = '\0';
-            sizeTypes = get_size_array(rest);
+            check_whitespace(rest);
+            sizeTypes = get_size_array_str(rest);
 
             if (sizeTypes != 0){
                 io_types = map_io_to_numbers(rest, sizeTypes);
@@ -50,7 +48,7 @@ ProcessQueue* parse_JSON(void){
             }
 
             if (sizeTypes != sizeTimes){
-                printf("error: the number of io_times does not equal the amount of times io activates the OS\n");
+                fprintf(stderr, "json_parser(): the number of io_times does not equal the amount of times io activates the OS\n");
                 exit(1);
             }
 
@@ -75,15 +73,46 @@ ProcessQueue* parse_JSON(void){
     return queue;
 }
 
-int get_size_array(char *str){
-    int count = 0;
+int get_size_array_int(char *str){
+    int count_int;
+    count_int = 0;
 
-    do {
-        if (*str == ',')
-            count++;
-    } while (*(str++));
+    while (*str != '\0') {
+        if (*str >= '0' && *str <= '9'){
+            count_int++;
 
-    return count; 
+            while (*str >= '0' && *str <= '9') {
+                str++;
+            }
+        } else {
+            str++; 
+        }
+    }
+
+    return count_int; 
+}
+
+int get_size_array_str(char *str) {
+    int count_str;
+    int inside_quotes; 
+
+    count_str = 0;
+    inside_quotes = 0;
+
+    while (*str != '\0') {
+        if (*str == '"') {
+            inside_quotes = !inside_quotes; 
+        } else if (*str == ',' && !inside_quotes) {
+            count_str++; 
+        }
+        str++;
+    }
+
+    if (count_str == 0 && *(str - 1) == ']' && *(str - 2) == '[') {
+        return count_str;
+    }
+
+    return count_str + 1; 
 }
 
 int* str_to_int_array(char *str, int max){
@@ -92,7 +121,7 @@ int* str_to_int_array(char *str, int max){
     
     int* arr = malloc(sizeof(int) * max);
     if (arr == NULL) {
-        printf("Memory allocation failed.\n");
+        fprintf(stderr, "str_to_int_array(): could not alloc memory");
         exit(1);
     }
 
@@ -169,4 +198,20 @@ int* map_io_to_numbers(char* io_devices, int count) {
     }
 
     return io_array;
+}
+
+void check_whitespace(char *str){
+    int index;
+    index = strlen(str) - 1;
+
+    while(str[index] == '\n' || 
+          str[index] == '\r' || 
+          str[index] == ' ' || 
+          str[index] == '\t' || 
+          str[index] == '\v' ||
+          str[index] == '\f'){
+            index--;
+    }
+
+    str[index + 1] = '\0';
 }
